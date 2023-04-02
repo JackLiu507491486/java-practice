@@ -37,6 +37,14 @@ public class TimeTest {
         } else {
             System.out.printf("测试失败");
         }
+    }
 
+    @Test
+    public void timeTrue4() throws ParseException {
+        if (!this.time.timeTrue("1999年4月3日 1:3:89")) {
+            System.out.printf("测试通过");
+        } else {
+            System.out.printf("测试失败");
+        }
     }
 }
